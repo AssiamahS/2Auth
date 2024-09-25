@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>QR Code</title>
+  </head>
+  <body>
+    <h1>Scan this QR Code with your Authenticator app</h1>
+    <img src="data:image/png;base64,{{ img_data }}">
+    <a href="{{ url_for('index') }}">Back</a>
+  </body>
+</html>
