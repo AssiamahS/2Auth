@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>2FA Example</title>
+  </head>
+  <body>
+    <h1>2FA Example</h1>
+    <a href="{{ url_for('qrcode_route') }}">Get QR Code</a>
+    <form action="{{ url_for('verify') }}" method="post">
+      <input type="text" name="token" placeholder="Enter 2FA token">
+      <button type="submit">Verify</button>
+    </form>
+  </body>
+</html>
